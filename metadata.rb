@@ -11,6 +11,8 @@ recipe "memcached", "Installs and configures memcached"
   supports os
 end
 
+depends "monit"
+
 attribute "memcached/memory",
   :display_name => "Memcached Memory",
   :description => "Memory allocated for memcached instance",
